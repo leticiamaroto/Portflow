@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    width: 100%;
+}
+.header-img{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+nav{
+    background-color: white;
+    padding: 18px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+h2 {
+    color: black;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+nav, ul{
+    display: flex;
+    flex-direction: row;
+}
+li{
+    color:grey;
+    padding: 0 20px;
+    font-size: 1.1rem;
+}
+h2{
+    margin: 0;
+    padding: 10px;
+}
+button{
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 36px;
+    width: 60px;
+    height: 79px;
+    position: absolute;
+    display: none;
+}
+li:hover{
+    cursor: pointer;
+    font-weight:bold;
+    color: black;
+    opacity: 0.9;
+}
+button:focus~ul {
+    height: 100px;
+}
+
+@media (max-width: 360px) {
+
+    nav,
+    ul {
+        flex-direction: column;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    nav {
+        padding: 0;
+        align-items: flex-start;
+        height: 34px;
+    }
+
+    h2 {
+        display: flex;
+        margin-left: 78%;
+        left: 30%;
+        position: relative;
+        bottom: 0.6rem;
+    }
+
+    button {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        padding: 3%;
+        width: 120px;
+        height: 35px;
+    }
+
+    li,
+    ul {
+        width: 100%;
+    }
+}
+header{
+    align-items: center;
+}
+.texto-header{
+    position: absolute;
+    font-size: 3rem;
+    color: white;
+    top: 51%;
+    padding-left: 7%;
+}
+p{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    top: 66%;
+    padding-left: 7%;
+    cursor: pointer;
+}
+.container-header{
+    display: flex;
+}
+main{
+    margin-top: 7%;
+}
+.container{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 13px;
+    margin-left: 7.5%;
+    margin-right: 15%;
+}
+.container div{
+        display: flex;
+        justify-content: center;
+}
+.photo{
+    display: flex;
+    width: 270px;
+    height: 270px;
+}
+footer{
+    
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 110px;
+    align-items: flex-end;
+    margin-top: 6%;
+}
+.footer-icons{
+    position: absolute;
+    left: 8%;
+
+}
+.icon{
+    display: inline-flex;
+    width: 28px;
+    height: 28px;
+    margin: 82px 13px;
+    align-items: flex-end;
+    cursor: pointer;
+}
+.rodape{
+    justify-content: flex-start;
+    margin-top: 90px;
+    flex-direction: column;
+}
+h4{
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 48px;
+    margin-left: 575px;
+    color: black;
+}
+.first-paragraph{
+    flex-direction: column;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    margin-top: 91%;
+    margin-left: 43%;
+    color: grey;
+}
+.second-paragraph{
+    flex-direction: column;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    margin-top: 92%;
+    margin-left: 43%;
+    color: grey;
+}
+
+@media (max-width: 360px) {
+    header {
+        width: 100%;
+        height: 50px;
+        position: static;
+    }
+    .header-img{
+        display: none;
+    }
+    button {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 160px;
+        margin-top: 0;
+        cursor: pointer;
+    }
+    h2 {
+        margin-left: 116px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+    ul {
+        display: none;
+    }
+    .container-header {
+        background-image: url(./assets/laranja\ azul\ recorte\ 2.png);
+        background-size: cover;
+        flex-direction: column;
+        height: 500px;
+    }
+    .texto-header {
+        flex-direction: column;
+        margin-right: 150px;
+        font-size: 43px;
+        width: 50%;
+    }
+    p {
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        margin-top: 90px;
+    }
+    .photo img {
+        flex-direction: column;
+        width: 100%;
+        height: 39vh;
+        margin-top: 190%;
+        padding-left: 10%;
+    }
+    .container{
+        display: block;
+    }
+    footer {
+        background-color: #7FDBD4;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+        height: 400px;
+        margin-top: 149%;
+        margin-left: 54px;
+        padding-bottom: 2%;
+    }
+    footer{
+        width: 67%;
+        height: 38px;
+    }
+    .container-footer{
+        flex-direction: column;
+        display: flex;
+    }
+    .footer-icons {
+        align-items: center;
+        justify-content: center;
+        margin-top: 82%;
+        margin-left: 39px;
+    }
+    .icon {
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        margin: 5px;
+    }
+    .white-div{
+        margin-bottom: 90px;
+        width: 200px;
+        height: 200px;
+        background-color: white;
+    }
+    .container-footer {
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 90px;
+
+    }
+    .rodape{
+        display: flex;
+        flex-direction: column;
+    }
+    h4{
+        margin-right: 760px;
+        margin-top: 17%;
+    }
+    h4 {
+        font-size: 0.7rem;
+    }
+    .first-paragraph{
+        font-size: 0.6rem;
+        margin-top: 1026%;
+        margin-left: 160%;
+    }
+    .second-paragraph{
+        font-size: 0.6rem;
+        margin-top: 1033%;
+        margin-left: 160%;
+    }
+    .button-topo {
+        background-color: #333333;
+        display: flex;
+        width: 60px;
+        height: 10px;
+        font-size: 0.8rem;
+        margin-left: 190%;
+        margin-top: 126%;
+        border-radius: 4px;
+        box-shadow: 2px 2px 2px 2px rgb(51, 50, 50);
+        color: grey;
+        cursor: pointer;
+    }
+}
